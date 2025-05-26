@@ -1,3 +1,5 @@
+// Is this a Palindrom string or not?
+
 #include<iostream>
 #include<vector>
 using namespace std;
