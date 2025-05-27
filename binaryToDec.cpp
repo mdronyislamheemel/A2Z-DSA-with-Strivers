@@ -9,7 +9,7 @@ int main()
     while(n != 0){
         remain = n % 2;
         n = n /10;
-        ans = ans + remain * (1<<i);
+        ans = ans + remain * (1<<i);//left shift 
         i++;
     }
     cout << ans;
