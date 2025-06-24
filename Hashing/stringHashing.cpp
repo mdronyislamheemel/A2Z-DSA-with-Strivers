@@ -8,6 +8,7 @@ int main()
 
     //precompute
     int hash[26] = {0};
+    //if we take 256 instead of 26 then no need to minus 'a' because it takes all of the ascii characters
     for ( int i = 0; i< s.size(); i++){
         hash[s[i] - 'a'] += 1;
     }
