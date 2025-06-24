@@ -1,0 +1,1 @@
+{"name":"Local: numberMap","url":"c:\\Users\\RONY\\OneDrive\\Desktop\\CPP with Striver\\Hashing\\numberMap.cpp","tests":[{"id":1750791671408,"input":"5\n1 2 12 3 5\n4 \n1 \n2\n12\n4\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\RONY\\OneDrive\\Desktop\\CPP with Striver\\Hashing\\numberMap.cpp","group":"local","local":true}
