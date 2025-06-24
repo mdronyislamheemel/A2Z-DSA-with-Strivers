@@ -16,6 +16,8 @@ int main()
     for(int i = 0; i< n; i++){
         mpp[arr[i]]++;
     }
+    //we can also the precompute in one for loop . just initialixe map after the vector and 
+    //mpp[arr[i]]++; into the for loop. and for this we can oftimize the time complexity N+N from N*N
 
     //iterate in the map
     for(auto it: mpp){
