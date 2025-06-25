@@ -35,3 +35,5 @@ int main()
 
     return 0;
 }
+
+//time complexity of this method O(n2)
