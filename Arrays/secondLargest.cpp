@@ -44,6 +44,22 @@ void secondLargest(vector<int>& vec, int n){
     cout<< seLargest << endl;
 }
 
+//now we can also calculate second smallest number too
+
+void secondSmallest(vector<int>& vec, int n){
+    int smallest = vec[0];
+    int secondSmallest = INT_MAX;
+    for(int i = 1; i< n; i++){
+        if(vec[i] < smallest){
+            secondSmallest = smallest;
+            smallest  = vec[i];
+        }
+        else if(vec[i] != smallest && vec[i] < secondSmallest){
+            secondSmallest = vec[i];
+        }
+    }
+    cout<< secondSmallest << endl;
+}
 
 
 
@@ -57,6 +73,7 @@ int main()
     }
     sLargest(arr, n);
     secondLargest(arr, n);
+    secondSmallest(arr, n);
     return 0;
 }
 
