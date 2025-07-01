@@ -7,14 +7,17 @@ int main()
     int n;
     cin>> n;
     vector<int> arr(n);
+    //just take the input from the user
     for(int i = 0; i< n; i++){
         cin>> arr[i];
     }
-
+    //set doesn't store duplicate elements. so if we add those element 
+    //in a set then the duplicate elements will be remove from
     set<int> st;
     for(int i =0; i<n; i++){
         st.insert(arr[i]);
     }
+    //simply print the elements of the set
     int index = 0;
     for(auto it : st){
         // arr[index] = it;
