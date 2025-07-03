@@ -1,3 +1,6 @@
+//https://leetcode.com/problems/missing-number/description/
+//leetcode problem:268. Missing number
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

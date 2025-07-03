@@ -17,7 +17,7 @@ int main()
             mp[temp]++;
         }
         for(int i = 0; ; i++){
-            cout<<i<<" "<<mp[i]<<endl;
+            //cout<<i<<" "<<mp[i]<<endl;
             if(mp[i] < i+1){
                 cout<< i<< endl;
                 break;
