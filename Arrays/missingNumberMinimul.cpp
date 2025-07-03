@@ -20,3 +20,5 @@ int main()
 
     return 0;
 }
+//we can solve this problem in another minimul way. this is saved as a problems solution.
+// the way is xor approach
