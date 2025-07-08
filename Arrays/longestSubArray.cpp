@@ -90,5 +90,5 @@ int main(){
             sum += a[right];
         }
     }
-    cout << maxLen;
+    cout <<  maxLen;
 }
