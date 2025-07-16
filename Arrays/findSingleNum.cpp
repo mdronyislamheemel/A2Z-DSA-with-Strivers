@@ -4,15 +4,8 @@
 #include<map>
 #include<unordered_map>
 using namespace std;
-int main()
-{
-    int n;
-    cin >> n;
-    vector<int> arr(n);
-    for(int i = 0; i< n; i++){
-        cin >> arr[i];
-    }
-
+//bruteforce approach
+void bruteForce(vector<int> arr, int n){
     // brute force method
     int maxi = 0;
     for( auto val : arr){
@@ -27,8 +20,10 @@ int main()
             cout << i << endl;
         }
     }
+}
 
-    // this is better approach
+//better approach
+void betterApproach(vector<int> arr, int n){
     unordered_map<int, int> mpp;
     for(int i = 0; i < n; i++){
         mpp[arr[i]] ++;
@@ -39,12 +34,28 @@ int main()
             cout << it.first << endl;
         }
     }
+}
 
+//minimul approach
+void minimulApproach(vector<int> arr, int n){
     // and the best approach
     int xorr = 0;
     for(auto val : arr){
         xorr = xorr ^ val;
     }
     cout << xorr;
+}
+int main()
+{
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for(int i = 0; i< n; i++){
+        cin >> arr[i];
+    }
+
+    bruteForce(arr, n);
+    betterApproach(arr, n);
+    minimulApproach(arr, n);
     return 0;
 }
